@@ -5,7 +5,7 @@ import java.net.*;
 
 public class SimpleUDPExampleClient2 {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws SocketException, UnknownHostException, IOException{
         try (DatagramSocket clientSocket = new DatagramSocket()) {
             byte[] sendData = new byte[1024];
             byte[] receiveData = new byte[1024];
